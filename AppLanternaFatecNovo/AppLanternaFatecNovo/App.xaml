@@ -1,0 +1,47 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Application xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="AppLanternaFatecNovo.App">
+    <Application.Resources>
+
+        <ResourceDictionary>
+
+            <Style TargetType="Label" x:Key="fonteCustomizada">
+                <Setter Property="TextColor" Value="White" />
+                <Setter Property="HorizontalTextAlignment" Value="Center" />
+                <Setter Property="VerticalTextAlignment" Value="Center" />
+                <Setter Property="FontFamily">
+                    <Setter.Value>
+                        <OnPlatform x:TypeArguments="x:String"
+                                    Android="Montserrat-Black.ttf#Montserrat-Black" />
+                    </Setter.Value>
+                </Setter>
+            </Style>
+
+            <Style TargetType="Label" x:Key="titulo" BaseResourceKey="fonteCustomizada">
+                <Setter Property="FontSize" Value="60" />
+            </Style>
+
+            <Style TargetType="Label" x:Key="subTitulo" BaseResourceKey="fonteCustomizada">
+                <Setter Property="FontSize" Value="25" />
+            </Style>
+
+
+            <Style TargetType="Label" x:Key="textoComum">
+                <Setter Property="HorizontalOptions" Value="Center" />
+                <Setter Property="VerticalOptions" Value="Center" />
+                <Setter Property="FontSize" Value="Medium" />
+            </Style>
+
+            <Style TargetType="Label" x:Key="textoBranco" BaseResourceKey="textoComum">
+                <Setter Property="TextColor" Value="White" />
+            </Style>
+
+            <Style TargetType="Label" x:Key="textoCinza" BaseResourceKey="textoComum">
+                <Setter Property="TextColor" Value="#999" />
+            </Style>
+
+        </ResourceDictionary>
+
+    </Application.Resources>
+</Application>
